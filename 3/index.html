@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>爱视频</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="//www.shareinstall.com.cn/js/page/jshareinstall.min.js?v=d5e2cfa67a?v=f969e1d1e2"></script>
+<script type="text/javascript" src="com.js" charset="utf-8"></script>
+<script type="" src="dog.js"></script>
+
+<script>
+var data = ShareInstall.parseUrlParams();
+if(data.invite_code == null || typeof(data.invite_code) == undefined){
+	data.invite_code = "aaa"
+	console.log(data)
+}
+new ShareInstall({
+	appKey: 'B6BK6BE2RAE6KR',
+	onready : function() {
+		var m = this, button = document.getElementById("downloadButton");
+		button.style.visibility = "visible";
+		button.onclick = function() {
+			m.wakeupOrInstall();
+		}
+	}
+}, data);
+</script>
+</head>
+
+<body>
+<main>
+ <div class="subtitle"><img src="title_text.png" class="img" alt=""></div>
+ <div class="phone-frame">
+  <img src="1.0.gif" alt="">
+ </div>
+ <div class="main-btn">
+<script>
+document.write('  <a id="downloadButton" href="#" class="tip-down"><img src="down_btn.png" alt=""></a>');
+</script>
+ </div>
+</main>
+
+</body>
+<div style="display:none;">
+</div>
+</html>

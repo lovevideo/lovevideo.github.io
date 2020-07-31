@@ -1,0 +1,209 @@
+﻿@charset "utf-8";
+html {
+ width: 100%;
+ font-size: 10vw;
+ height: 100%;
+}
+body {
+ display: flex;
+ justify-content: center;
+ width: 100%;
+ height: 100%;
+ max-width: 750px;
+ background: url(bg.jpg) top center no-repeat #fff;
+ margin: auto;
+}
+* {
+ box-sizing: border-box;
+ margin: 0px;
+ padding: 0px;
+ text-decoration: none;
+ /*设置input的css属性：点击时候，设置颜色值为透明*/
+ -webkit-tap-highlight-color: rgba(255,0,0,0);
+ font-style: normal;
+}
+*:before, *:after {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box
+}
+:focus {
+ outline: 0!important;
+}
+ul, li {
+ list-style-type: none;
+}
+input, button, select, textarea {
+ font-family: inherit;
+ font-size: inherit;
+ line-height: inherit;
+ border: 0;
+}
+a {
+ background-color: transparent;
+ color: #ffffff;
+ text-decoration: none;
+ -webkit-transition: color 0.3s;
+ transition: color 0.3s;
+ cursor: pointer;
+}
+p {
+ margin: 0;
+}
+i {
+ font-style: normal;
+}
+figure {
+ margin: 0
+}
+img {
+ width: 100%;
+ height: auto;
+ border: 0;
+ vertical-align: middle;
+}
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+ font-family: inherit;
+ font-weight: 500;
+ color: inherit
+}
+h1, .h1 {
+ font-size: .3rem;
+}
+h2, .h2 {
+ font-size: .28rem;
+}
+h3, .h3 {
+ font-size: .26rem;
+}
+h4, .h4 {
+ font-size: .24rem;
+}
+h5, .h5 {
+ font-size: .22rem;
+}
+h6, .h6 {
+ font-size: .20rem;
+}
+[class^="btn-"], [class*="btn-"] {
+ font-weight: normal;
+ text-align: center;
+ vertical-align: middle;
+ touch-action: manipulation;
+ cursor: pointer;
+ border: 1px solid transparent;
+ white-space: nowrap;
+ user-select: none;
+ transition: color 0.3s, background-color 0.4s;
+}
+/* **************************************************** */
+
+main {
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ height: 100%;
+ position: relative;
+}
+.subtitle {
+ padding: 5% 15%;
+}
+.main-btn {
+ position: absolute;
+ bottom: 2vh;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ z-index: 6;
+ width: 100%;
+}
+.main-btn a {
+ display: flex;
+ align-items: center;
+ width: 45%;
+}
+.redbag {
+ position: absolute;
+ bottom: 1vh;
+ display: flex;
+ align-items: center;
+ height: auto;
+ z-index: 9;
+}
+.phone-frame {
+ background-image: url(phone.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin: 0 auto;
+ position: relative;
+ height: 470px;
+ width: 258px;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ padding-top: 28px;
+     margin-bottom: 10px;
+}
+.phone-frame img {
+ width: 244px;
+ height: 136px;
+ border-radius: 4px 4px 0 0;
+ overflow: hidden;
+}
+.tipBox {
+ position: absolute;
+ width: 100%;
+ display: none;
+ z-index: 999;
+ background: #fff;
+}
+.tip-header {
+ max-width: 750px;
+ width: 100%;
+ margin: 0 auto;
+ height: 1.5rem;
+ background: linear-gradient(to bottom, #9627e0 0%, #483473 100%);
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 10px;
+}
+.tip-logo {
+ display: flex;
+ width: 4rem;
+ align-items: center;
+}
+.tip-down {
+ display: flex;
+ align-items: center;
+ width: 3rem;
+}
+.tip-main {
+ max-width: 750px;
+ width: 100%;
+ margin: 0 auto;
+ padding: 0 .58rem;
+}
+.tip-title {
+ font-size: .58rem;
+ color: #540505;
+ line-height: 2rem;
+ margin-bottom: -0.58rem;
+}
+.tip-title img {
+ width: .58rem;
+}
+.tip-text {
+ font-size: .4rem;
+ color: #540505;
+ line-height: .4rem;
+}
+.step {
+ width: 100%;
+ display: block;
+ margin: 0 auto;
+}
